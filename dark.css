@@ -1,0 +1,114 @@
+/* Techy dark theme for Website */
+:root {
+  --bg: #0b0f12;
+  --card: #0f1720;
+  --muted: #94a3b8;
+  --text: #e6eef6;
+  --accent: #00bcd4;
+  --accent-2: #1fb6ff;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0 1px, transparent 1px 40px);
+  background-attachment: fixed;
+}
+nav {
+  background: rgba(255,255,255,0.02);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin-right: 2rem;
+  font-weight: 700;
+  opacity: 0.95;
+}
+nav a:hover {
+  color: var(--accent-2);
+}
+section {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+section.about-page, section.contact-page {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 10px;
+  margin: 3rem 1rem;
+  max-width: 900px;
+  padding: 2rem 2.5rem;
+  text-align: left;
+  color: var(--text);
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+h1 {
+  font-size: 2.25rem;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+h2 {
+  color: var(--accent-2);
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 2rem auto;
+  display: block;
+  border: 4px solid var(--accent);
+  box-shadow: 0 8px 20px rgba(2,6,23,0.6);
+}
+ul {
+  margin-left: 1.25rem;
+  color: var(--muted);
+}
+form {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  text-align: left;
+}
+label {
+  font-weight: 700;
+  color: var(--text);
+}
+input, textarea {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  background: rgba(255,255,255,0.02);
+  color: var(--text);
+}
+button {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #051014;
+  padding: 0.75rem 1.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(0,188,212,0.12);
+}
+button:hover {
+  transform: translateY(-1px);
+}
+form button {
+  display: block;
+  margin: 1rem auto 0;
+}
